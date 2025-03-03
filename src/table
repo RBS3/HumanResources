@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Actions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ede8e8;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            background: rgb(245, 239, 239);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .actions i {
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .edit {
+            color: #4CAF50;
+        }
+        .delete {
+            color: #f44336;
+        }
+        .update {
+            color: #ff9800;
+        }
+        .edit:hover {
+            background-color: #e8f5e9;
+        }
+        .delete:hover {
+            background-color: #ffebee;
+        }
+        .update:hover {
+            background-color: #fff3e0;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td class="actions">
+                    <i class="fas fa-edit edit" title="Edit"></i>
+                    <i class="fas fa-sync update" title="Update"></i>
+                    <i class="fas fa-trash delete" title="Delete"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td class="actions">
+                    <i class="fas fa-edit edit" title="Edit"></i>
+                    <i class="fas fa-sync update" title="Update"></i>
+                    <i class="fas fa-trash delete" title="Delete"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
